@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>CV</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.1.0" rel="stylesheet">
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof html2pdf !== "undefined") {
+          console.log("html2pdf est chargée avec succès !");
+        } else {
+          console.log("html2pdf n'est pas chargée. Assurez-vous que le chemin du fichier JavaScript est correct.");
+        }
+      });
+    </script>
+    
+    
+
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body id="pdf-content">
+    <header>
+      <div class="profile-page sidebar-collapse">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+          <div class="container">
+            <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip"> CV</a>
+              <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">A propos</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Compétences</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experiences</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">aperçus</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="page-content">
+      <div>
+<div class="profile-page">
+  <div class="wrapper">
+    <div class="page-header page-header-small" filter-color="blue">
+      <div class="page-header-image" data-parallax="true" style="background-image: url('images/background.jpg')"></div>
+      <div class="container">
+        <div class="content-center">
+          <div class="cc-profile-image">
+            <a href="#">
+              <img src="images/profile.jpeg" alt="Image" style="width: 300px; height: 280px;">
+            </a>
+          </div>
+          
+          <div class="h2 title">Essafi Ikram</div>
+          <p class="category text-white">Etudiante en 3ème année cycle d' ingénieur en sciences géomatiques et ingénierie topographique</p><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire me</a><!-- Ajoutez le bouton pour télécharger le PDF -->
+          <!-- Bouton de téléchargement -->
+<a class="btn btn-primary" href="#" id="download-pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Télécharger CV</a>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Sélectionnez le bouton de téléchargement par son ID
+    const downloadButton = document.getElementById('download-pdf');
+    
+    if (downloadButton) {
+      downloadButton.addEventListener('click', function () {
+        const element = document.getElementById('pdf-content');
+        // Utilisez HTML2PDF pour générer le PDF à partir de l'élément ciblé
+        html2pdf()
+          .from(element)
+          .outputPdf()
+          .then(function (pdf) {
+            // Enregistrez le PDF avec un nom de fichier
+            pdf.save('mon_cv.pdf');
+          });
+      });
+    }
+  });
+</script>
+
+          
+          
+
+        </div>
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="button-container"><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Google+"><i class="fa fa-google-plus"></i></a><a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="about">
+  <div class="container">
+    <div class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="card-body">
+            <div class="h4 mt-0 title">About</div>
+            <p>Bonjour</p>
+            <p>Ce CV vous propose une analyse approfondie de mon cursus académique, mettant en avant mes réalisations, mon cheminement éducatif, et les compétences que j'ai acquises au fil de mes études. <a href="https://templateflip.com/templates/creative-cv/" target="_blank">Learn More</a></p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="card-body">
+            <div class="h4 mt-0 title">Basic Information</div>
+            <div class="row">
+              <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
+              <div class="col-sm-8">22 ans</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
+              <div class="col-sm-8">Essafiikram@iav.ac.ma</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
+              <div class="col-sm-8">0694919977</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
+              <div class="col-sm-8">IAV, Masinat Al Irfane, Rabat</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
+              <div class="col-sm-8">French,English,Arab </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="skill">
+  <div class="container">
+    <div class="h4 text-center mb-4 title">Compétences Professionnelles</div>
+    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">AutoCAD, MicroStation,Tbc,Topogen</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">système d'information géographique (QGIS, ArcGIS)</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div><span class="progress-value">75%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Langages de Programmation (Python, SQL, HTML)</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div><span class="progress-value">60%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Autres Compétences (metashape,pix4d,lidar360)</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div><span class="progress-value">70%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<div class="section">
+  <div class="container cc-education">
+    <div class="h4 text-center mb-4 title">Education</div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>2018 -2019</p>
+            <div class="h5">Baccalauréat</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Réussite du Baccalauréat en Sciences Physiques avec mention très bien </div>
+            <p class="category">Lycé Tahla.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>2019 - 2020</p>
+            <div class="h5">Apesa</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Adhésion à l'APESA</div>
+            <p class="category">Année Préparatoire aux Etudes Supérieures en Agronomie Rabat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>2020</p>
+            <div class="h5">IAV</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Début d'étude en filière de Sciences Géomatiques et ingénierie topographique.</div>
+            <p class="category">Institut Agronomique et Vétérinaire Hassan II à Rabat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="experience">
+  <div class="container cc-experience">
+    <div class="h4 text-center mb-4 title">Work Experience</div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>2021</p>
+            <div class="h5">Stage1</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">stage au sein de l'agence nationale de la conservation foncière du cadastre et de la cartographie - ANCFCC FES-.</div>
+            <p>Afin de perfectionner nos connaissances et maîtriser de près les diverses techniques et processus liés au cadastre, une implication active dans les travaux de la Conservation Foncière et du Cadastre est envisagée. Cela nous permettra de comprendre en détail les procédures de traitement des affaires au sein de chaque entité, d'observer de près le cheminement d'un dossier de sa réception à sa clôture, et de développer une compréhension approfondie de l'organisation de ces structures ainsi que de leurs relations avec leurs partenaires et leurs clients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>2023</p>
+            <div class="h5">Stage2</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Stage de professionnalisme</div>
+            <p>Le stage de professionnalisation est un élément fondamental de la formation d'un Ingénieur Géomètre Topographe. Son principal dessein est de doter l'étudiant de compétences et de connaissances qui viennent enrichir son bagage académique. Il offre également la possibilité de faire la synthèse et de comprendre la cohérence entre les différentes disciplines et enseignements relatifs aux sciences géodésiques, photogrammétriques et topographiques acquis au cours de son cursus universitaire.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>2023</p>
+            <div class="h5">Stage3</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Stage d'entreprise au sein de la sosciété XYCONCEPT</div>
+            <p>En troisième année de mon cursus en Sciences Géomatiques et Ingénierie Topographique à l'Institut Agronomique et Vétérinaire Hassan II, j'ai effectué un stage au sein d'une entreprise privée ou d'une organisation travaillant dans les domaines de la topographie, des SIG, de la photogrammétrie, de la bathymétrie, et d'autres domaines connexes. Ce stage visait à renforcer mes compétences en appliquant mes connaissances théoriques sur le terrain, tout en me permettant de découvrir les responsabilités et les exigences du monde professionnel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="reference">
+  <div class="container cc-reference">
+    <div class="h4 mb-4 text-center title">Parascolaire</div>
+    <div class="card" data-aos="zoom-in">
+      <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#cc-Indicators" data-slide-to="0"></li>
+          <li data-target="#cc-Indicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/AMETOP.jpg" alt="Image"/>
+                <div class="h5 pt-2">AMETOP</div>
+              </div>
+              <div class="col-lg-10 col-md-9">
+                <p>Membre de l'assiocation marocaine des étudiants topographes AMETOP.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/ENACTUS.png" alt="Image"/>
+                <div class="h5 pt-2">Enactus</div>
+              </div>
+              <div class="col-lg-10 col-md-9">
+                <p> Chef du projet Talib job au sein d'Enactus IAV.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="portfolio">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6 ml-auto mr-auto">
+            <div class="h4 text-center mb-4 title">Aperçus</div>
+            <div class="nav-align-center">
+                <ul class="nav nav-pills nav-pills-primary" role="tablist">
+                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#web-development" role="tablist"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design" role="tablist"><i class="fa fa-briefcase" aria-hidden="true"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Photography" role="tablist"><i class="fa fa-users" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="tab-content gallery mt-5">
+      <div class="tab-pane active" id="web-development">
+        <div class="ml-auto mr-auto">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                  <figure class="cc-effect"><img src="images/project-1.jpeg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Projet éducatif </div>
+                      <p>Stage de professionnalisation</p>
+                    </figcaption>
+                  </figure></a></div>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                  <figure class="cc-effect"><img src="images/project-2.jpeg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Parascolaire</div>
+                      <p>Forum Entreprises 2023</p>
+                    </figcaption>
+                  </figure></a></div>
+            </div>
+            <div class="col-md-6">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                  <figure class="cc-effect"><img src="images/project-3.jpeg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Competition</div>
+                      <p>PREMIER PRIX d'un bootcamp au sein d'ENSIAS</p>
+                    </figcaption>
+                  </figure></a></div>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                  <figure class="cc-effect"><img src="images/project-4.jpeg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Parascolaire</div>
+                      <p>Forum Entreprises 2022</p>
+                    </figcaption>
+                  </figure></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+<div class="section" id="contact">
+  <div class="cc-contact-information">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13235.060168520155!2d-6.8672773!3d33.9728781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76cc4f7a0fc6f%3A0x8bbf5756ab11f3ea!2sInstitut%20Agronomique%20et%20V%C3%A9t%C3%A9rinaire%20Hassan-II!5e0!3m2!1sfr!2sma!4v1697496290373!5m2!1sfr!2sma" width="1500" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Autres informations de contact ici -->
+</div>
+
+
+  
+    <div class="container">
+      <div class="cc-contact">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="card mb-0" data-aos="zoom-in">
+              <div class="h4 text-center title">Contact Me</div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <form action="https://formspree.io/your@email.com" method="POST">
+                      <div class="p pb-3"><strong>Feel free to contact me </strong></div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
+                            <input class="form-control" type="text" name="name" placeholder="Name" required="required"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-file-text"></i></span>
+                            <input class="form-control" type="text" name="Subject" placeholder="Subject" required="required"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                            <input class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" placeholder="Your Message" required="required"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <button class="btn btn-primary" type="submit">Send</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <p class="mb-0"><strong>Address </strong></p>
+                    <p class="pb-2">IAV, Masinat Al Irfane, Rabat</p>
+                    <p class="mb-0"><strong>Phone</strong></p>
+                    <p class="pb-2">0694919977</p>
+                    <p class="mb-0"><strong>Email</strong></p>
+                    <p>Essafiikram@iav.ac.ma</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></div>
+    </div>
+    <footer class="footer">
+      <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div>
+      <div class="h4 title text-center">ESSAFI IKRAM</div>
+    </footer>
+    <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
+    <script src="js/core/popper.min.js?ver=1.1.0"></script>
+    <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
+    <script src="js/now-ui-kit.js?ver=1.1.0"></script>
+    <script src="js/aos.js?ver=1.1.0"></script>
+    <script src="scripts/main.js?ver=1.1.0"></script>
+    
+ 
+    
+  </body>
+</html>
