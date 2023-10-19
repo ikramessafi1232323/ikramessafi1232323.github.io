@@ -70,30 +70,32 @@
           <div class="h2 title">Essafi Ikram</div>
           <p class="category text-white">Etudiante en 3ème année cycle d' ingénieur en sciences géomatiques et ingénierie topographique</p><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire me</a><!-- Ajoutez le bouton pour télécharger le PDF -->
           <!-- Bouton de téléchargement -->
-<a class="btn btn-primary" href="#" id="download-pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Télécharger CV</a>
+          <a class="btn btn-primary" href="ikram/cv.html" download="cv.pdf" id="download-pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Télécharger CV</a>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Sélectionnez le bouton de téléchargement par son ID
-    const downloadButton = document.getElementById('download-pdf');
-    
-    if (downloadButton) {
-      downloadButton.addEventListener('click', function () {
-        const element = document.getElementById('pdf-content');
-        // Utilisez HTML2PDF pour générer le PDF à partir de l'élément ciblé
-        html2pdf()
-          .from(element)
-          .outputPdf()
-          .then(function (pdf) {
-            // Enregistrez le PDF avec un nom de fichier
-            pdf.save('mon_cv.pdf');
-          });
-      });
-    }
-  });
-</script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-          
+          <script>
+            document.getElementById("download-pdf").addEventListener("click", function () {
+              const element = document.body; // Selects the entire document body
+              html2pdf().from(element).outputPdf().then(function (pdf) {
+                const blob = new Blob([pdf], { type: "application/pdf" });
+                const url = URL.createObjectURL(blob);
+
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = "cv.pdf";
+                a.style.display = "none";
+                document.body.appendChild(a);
+
+                a.click();
+
+                URL.revokeObjectURL(url);
+              });
+            });
+          </script>
+
+
+                    
           
 
         </div>
@@ -471,6 +473,31 @@
     <script src="js/now-ui-kit.js?ver=1.1.0"></script>
     <script src="js/aos.js?ver=1.1.0"></script>
     <script src="scripts/main.js?ver=1.1.0"></script>
+    <script>
+     document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("download-button").addEventListener("click", function () {
+        const element = document.querySelector(".pdf-content");
+        html2pdf().from(element).outputPdf().then(function (pdf) {
+            const blob = new Blob([pdf], { type: "application/pdf" });
+            const url = URL.createObjectURL(blob);
+  
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "cv.pdf";
+            a.style.display = "none";
+            document.body.appendChild(a);
+  
+            a.click();
+  
+            URL.revokeObjectURL(url);
+        });
+    });
+});
+
+
+
+    
+  </script>
     
  
     
